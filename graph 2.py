@@ -32,7 +32,7 @@ counts = sum(zip(data[2013], data[2014], data[2015], data[2016], data[2006], dat
 
 source = ColumnDataSource(data=dict(x=x, counts=counts))
 
-p = figure(x_range=FactorRange(*x), height=650, title="Amount of PM-10 in Emirates Annually",
+p = figure(x_range=FactorRange(*x), height=750,width = 1400, title="Amount of PM-10 in Emirates Annually",
            toolbar_location=None, tools="")
 
 p.vbar(x='x', top='counts', width=0.9, source=source)
